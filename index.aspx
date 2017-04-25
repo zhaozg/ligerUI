@@ -5,8 +5,8 @@
 <head>
     <title>jQuery ligerUI Demos导航主页</title>
     <link href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" /> 
-    <script src="lib/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>    
-    <script src="lib/ligerUI/js/ligerui.min.js" type="text/javascript"></script> 
+    <script src="lib/jquery/jquery-1.9.0.min.js" type="text/javascript"></script>    
+    <script src="lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script> 
     <script src="indexdata.js" type="text/javascript"></script>
         <script type="text/javascript">
             var tab = null;
@@ -14,7 +14,7 @@
             var tree = null;
             $(function ()
             {
-
+                $("#home").attr("src", "welcome.htm");
                 //布局
                 $("#layout1").ligerLayout({ leftWidth: 190, height: '100%', heightDiff: -34, space: 4, onHeightChanged: f_heightChanged });
 
@@ -122,13 +122,13 @@
         </div>
         <div position="center" id="framecenter"> 
             <div tabid="home" title="我的主页" style="height:300px" >
-                <iframe frameborder="0" name="home" id="home" src="welcome.htm"></iframe>
+                <iframe frameborder="0" name="home" id="home" src=""></iframe>
             </div> 
         </div> 
         
     </div>
     <div  style="height:32px; line-height:32px; text-align:center;">
-            Copyright © 2011-2012 www.ligerui.com
+            Copyright © 2011-2013 www.ligerui.com
     </div>
     <div style="display:none"></div>
 </body>

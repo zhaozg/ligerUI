@@ -5,7 +5,7 @@
     <title></title>
     <link href="../../../lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
  
-    <script src="../../../lib/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="../../../lib/jquery/jquery-1.9.0.min.js" type="text/javascript"></script>
     <script src="../../../lib/ligerUI/js/core/base.js" type="text/javascript"></script>
     <script src="../../../lib/ligerUI/js/plugins/ligerGrid.js" type="text/javascript"></script>  
 
@@ -37,14 +37,17 @@
             if (!row) { alert('请选择行'); return; }
             alert(JSON.stringify(row));
         } 
-        
+        function reload()
+        {
+            manager.reload(1);
+        }
     </script>
 </head>
 <body  style="padding:4px"> 
 <div>  
   
    <a class="l-button" style="width:120px;float:left; margin-left:10px;" onclick="getSelected()">获取值</a>
-
+     <a class="l-button" style="width:120px;float:left; margin-left:10px;" onclick="reload()">刷新</a>
    <div class="l-clear"></div>
  
 </div>

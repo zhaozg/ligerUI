@@ -148,7 +148,7 @@ function bulidMainGrid()
             row.insearch = false;
         }
         rows.push(row);
-    });
+    }); 
     var gridPanle = $('<div style="margin:7px;"></div>').appendTo('body');
     window.grid =  gridPanle.ligerGrid({
         columns: [
@@ -173,7 +173,7 @@ function bulidMainGrid()
                 { display: '分组', name: 'group', width: 100, editor: { type: 'text'}}]
             }
        ],data: { Rows: rows }, usePager: false, toolbar: createGridToolbar(),
-        enabledEdit: true, clickToEdit: true, fixedCellHeight: false, inWindow: false, rownumbers: true,
+        enabledEdit: true, clickToEdit: true, fixedCellHeight: false, inWindow: true, rownumbers: true,
         width: '98%', height: '100%',heightDiff:-14, rowHeight: 24
     });
 }
@@ -423,7 +423,9 @@ function checkboxRender(rowdata, rowindex, value, column)
     iconHtml += ' columnname = "' + column.name + '"';
     iconHtml += '></div>';
     return iconHtml;
-}
+}  
+
+
 //是否类型的模拟复选框的点击事件
 $("div.chk-icon").live('click', function ()
 {

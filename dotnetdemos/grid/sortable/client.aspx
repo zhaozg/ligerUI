@@ -5,7 +5,7 @@
     <title></title>
     <link href="../../../lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
  
-    <script src="../../../lib/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="../../../lib/jquery/jquery-1.9.0.min.js" type="text/javascript"></script>
     <script src="../../../lib/ligerUI/js/core/base.js" type="text/javascript"></script>
     <script src="../../../lib/ligerUI/js/plugins/ligerGrid.js" type="text/javascript"></script>  
 
@@ -22,7 +22,7 @@
                 ], width: '100%', pageSizeOptions: [5, 10, 15, 20], height: '97%',
                 url: 'client.aspx?Action=GetData',
                 dataAction: 'local',//本地排序
-                usePager:false,
+                usePager:true,
                 alternatingRow: false, 
                 tree: { columnName: 'name' }
             }
